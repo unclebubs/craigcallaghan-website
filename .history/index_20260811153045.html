@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craig Callaghan — Turning complexity into clarity</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Instrument Sans"', 'sans-serif'],
+          },
+          colors: {
+            paper: '#FAFBFC',
+            stone: '#F2F0EC',
+            ink: '#1F2937',
+            muted: '#5F666D',
+            blue: '#163A5F',
+            'blue-light': '#3B82C4',
+            'blue-lighter': '#8BB8E8',
+            eyebrows: '#8BB8E8'
+          }
+        }
+      }
+    }
+  </script>
+
+  <noscript>
+    <style>
+      [data-hero] {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body class="bg-paper text-ink font-sans antialiased">
+
+  <header class="sticky top-0 z-50 border-b border-black/5 bg-paper/85 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
+      <a href="#" class="text-sm font-semibold uppercase tracking-[0.22em] text-blue">
+        Craig Callaghan
+      </a>
+
+      <nav aria-label="Main navigation" class="hidden items-center gap-8 text-sm font-medium text-blue md:flex">
+        <a href="#work" class="hover:text-ink">Work</a>
+        <a href="#services" class="hover:text-ink">Services</a>
+        <a href="#approach" class="hover:text-ink">Approach</a>
+        <a href="#contact" class="hover:text-ink">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="px-6 py-28 lg:px-8 lg:py-36">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-6 text-sm font-semibold uppercase tracking-[0.28em] text-eyebrows">
+          Websites · Digital platforms · Ongoing support
+        </p>
+
+        <h1 class="text-7xl font-bold leading-[1.02] tracking-tight text-blue">
+          <span data-hero="heading-1" class="block" style="opacity:0">Your goals first.</span>
+          <span data-hero="heading-2" class="block font-semibold !text-blue-lighter" style="opacity:0">Technology
+            second.</span>
+        </h1>
+
+        <p data-hero="strapline" class="mt-8 max-w-2xl text-lg leading-8 text-muted md:text-xl" style="opacity:0">
+          Every project starts by understanding your business and the challenges you're trying to solve.
+          The best technology decisions start with your goals.
+        </p>
+
+        <div data-hero="ctas" class="mt-10 flex justify-center gap-4" style="opacity:0">
+          <a href="#work"
+            class="rounded-full bg-blue px-6 py-3 text-sm font-semibold text-white shadow-none transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_-6px_rgba(22,58,95,0.45)]">
+            View my work
+          </a>
+          <a href="#contact"
+            class="rounded-full border border-black/10 px-6 py-3 text-sm font-semibold transition hover:border-blue hover:text-blue">
+            Get in touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem / intro -->
+    <section class="border-y border-black/5 bg-stone px-6 py-14 lg:px-8">
+      <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.8fr_1.2fr]">
+        <div data-reveal>
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-blue">
+            The challenge
+          </p>
+          <h2 class="mt-4 text-4xl leading-tight text-blue md:text-5xl ">
+            Digital projects often get messy because the problem was never made clear.
+          </h2>
+        </div>
+
+        <div data-reveal class="space-y-6 text-lg leading-8 text-muted flex  flex-col justify-center">
+          <p>
+            I work with organisations that have grown around content, data or specialist knowledge. Over time, systems
+            become harder to manage and complexity gets in the way.</p>
+          <p>
+            The first step is rarely writing code. It's understanding the real problem, simplifying it and designing
+            something that people can actually use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="px-6 py-14 lg:px-8">
+      <div class="mx-auto max-w-6xl">
+        <div data-reveal>
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-blue">
+            What I do
+          </p>
+
+          <h2 class="mt-4 max-w-3xl text-4xl leading-tight text-blue md:text-5xl">
+            Practical digital support for organisations that value clarity.
+          </h2>
+        </div>
+
+        <div data-reveal-children class="mt-12 grid gap-6 md:grid-cols-3">
+          <article
+            class="rounded-2xl border border-black/10 bg-white/50 p-8 transition hover:-translate-y-1 hover:border-blue/40">
+            <h3 class="text-xl font-semibold text-blue">Websites</h3>
+            <p class="mt-4 leading-7 text-muted">
+              Accessible, content-rich websites that are easy to navigate, manage and evolve.
+            </p>
+          </article>
+
+          <article
+            class="rounded-2xl border border-black/10 bg-white/50 p-8 transition hover:-translate-y-1 hover:border-blue/40">
+            <h3 class="text-xl font-semibold text-blue">Digital platforms</h3>
+            <p class="mt-4 leading-7 text-muted">
+              Custom tools, structured content systems, dashboards and data-led user experiences.
+            </p>
+          </article>
+
+          <article
+            class="rounded-2xl border border-black/10 bg-white/50 p-8 transition hover:-translate-y-1 hover:border-blue/40">
+            <h3 class="text-xl font-semibold text-blue">Ongoing support</h3>
+            <p class="mt-4 leading-7 text-muted">
+              Long-term improvements, hosting, maintenance, performance work and calm technical advice.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="bg-stone px-6 py-16 lg:px-8">
+      <div class="mx-auto max-w-6xl">
+        <div data-reveal>
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-blue">
+            Selected work
+          </p>
+
+          <h2 class="mt-4 max-w-3xl text-4xl leading-tight text-blue md:text-5xl">
+            Projects that turn complex information into useful digital experiences.
+          </h2>
+        </div>
+
+        <article data-reveal class="mt-14 grid overflow-hidden rounded-3xl  bg-paper md:grid-cols-2">
+          <div class="min-h-[320px] bg-blue/10 p-8"
+            style="background-image: url('/MPN-an.png'); background-size: cover; background-position: center;">
+
+          </div>
+
+          <div class="p-8 md:p-10">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">
+              Healthcare data platform
+            </p>
+            <h3 class="mt-4 text-4xl text-blue">MPN Atlas</h3>
+            <p class="mt-5 leading-8 text-muted">
+              A digital platform helping researchers and clinicians explore complex international
+              medical data through clearer structure, filtering and visualisation.
+            </p>
+            <a href="#" class="mt-8 inline-flex text-sm font-semibold text-blue">
+              Read case study →
+            </a>
+          </div>
+        </article>
+
+        <div data-reveal-children class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-black/10 bg-paper p-8">
+            <h3 class="text-xl font-semibold text-blue">A mobile platform for 600+ auction houses</h3>
+            <p class="mt-4 leading-7 text-muted">
+              A white-label app framework that made branded iOS and Android deployments faster,
+              more consistent and easier to maintain.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-black/10 bg-paper p-8">
+            <h3 class="text-xl font-semibold text-blue">World Vision medical knowledge portal</h3>
+            <p class="mt-4 leading-7 text-muted">
+              A clinical reference platform designed to help field doctors access structured treatment
+              guidance in low-bandwidth environments.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-black/10 bg-paper p-8">
+            <h3 class="text-xl font-semibold text-blue">DiCamillo country house database</h3>
+            <p class="mt-4 leading-7 text-muted">
+              A searchable knowledge base containing more than 6,500 British and Irish country houses.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-black/10 bg-paper p-8">
+            <h3 class="text-xl font-semibold text-blue">OCK charity website</h3>
+            <p class="mt-4 leading-7 text-muted">
+              A small, focused charity website built to communicate clearly, build trust and be easy to update.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="approach" class="px-6 py-16 lg:px-8">
+      <div class="mx-auto max-w-6xl">
+        <div data-reveal>
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-blue">
+            My approach
+          </p>
+
+          <h2 class="mt-4 max-w-3xl text-4xl leading-tight text-blue md:text-5xl">
+            Calm, thoughtful work built around the problem first.
+          </h2>
+        </div>
+
+        <div data-reveal-children class="mt-12 grid gap-8 md:grid-cols-2">
+          <article>
+            <h3 class="text-xl font-semibold text-blue">Start with the problem</h3>
+            <p class="mt-3 leading-7 text-muted">
+              The right technical choice only makes sense once the real challenge is understood.
+            </p>
+          </article>
+
+          <article>
+            <h3 class="text-xl font-semibold text-blue">Design for clarity</h3>
+            <p class="mt-3 leading-7 text-muted">
+              Whether it is a website, dashboard or database, the aim is to make information easier to use.
+            </p>
+          </article>
+
+          <article>
+            <h3 class="text-xl font-semibold text-blue">Build to last</h3>
+            <p class="mt-3 leading-7 text-muted">
+              I favour maintainable systems that can evolve, not disposable builds that only look good on launch day.
+            </p>
+          </article>
+
+          <article>
+            <h3 class="text-xl font-semibold text-blue">Partner, not disappear</h3>
+            <p class="mt-3 leading-7 text-muted">
+              Many clients need steady, ongoing support as much as they need the initial build.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="bg-stone px-6 py-24 lg:px-8">
+      <div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+        <div data-reveal class="aspect-[4/5] rounded-3xl bg-blue/10 p-6">
+          <div
+            class="flex h-full items-center justify-center rounded-2xl border border-dashed border-blue/30 text-muted">
+            Portrait / workspace image
+          </div>
+        </div>
+
+        <div data-reveal>
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-blue">
+            About
+          </p>
+
+          <h2 class="mt-4 text-4xl leading-tight text-blue md:text-5xl">
+            A web partner for organisations with complex things to explain.
+          </h2>
+
+          <p class="mt-6 leading-8 text-muted">
+            I’m Craig, a web developer based in East Lothian. I work with charities,
+            academic organisations, healthcare projects and businesses that need thoughtful
+            websites, useful digital tools and reliable long-term support.
+          </p>
+
+          <p class="mt-5 leading-8 text-muted">
+            My best work usually sits where content, data, design and technology overlap.
+            The aim is always the same: make things clearer, easier to manage and better for the people using them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="px-6 py-28 text-center lg:px-8">
+      <div data-reveal class="mx-auto max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-blue">
+          Get in touch
+        </p>
+
+        <h2 class="mt-4 text-5xl leading-tight text-blue md:text-6xl">
+          Have something complex that needs made clearer?
+        </h2>
+
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted">
+          Whether you are planning a new website, improving an existing platform or trying
+          to make complex information easier to understand, I’d be happy to hear about it.
+        </p>
+
+        <a href="mailto:hello@example.com"
+          class="mt-10 inline-flex rounded-full bg-blue px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5">
+          Start a conversation →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-black/5 px-6 py-8 lg:px-8">
+    <div
+      class="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-muted md:flex-row md:items-center md:justify-between">
+      <p class="text-blue/60">© Craig Callaghan</p>
+      <p>Websites, digital platforms and ongoing support.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
