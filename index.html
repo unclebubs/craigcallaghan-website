@@ -2,9 +2,21 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C43F491M51"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-C43F491M51');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Craig Callaghan - Turning complexity into clarity</title>
+  <meta name="description"
+    content="Craig Callaghan helps organisations simplify complexity with clear digital strategy, website design, and ongoing support built around business goals." />
+  <title>Craig Callaghan | Digital Strategy, Websites & Ongoing Support</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -45,10 +57,14 @@
 </head>
 
 <body class="bg-paper text-ink font-sans antialiased">
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-blue focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white">
+    Skip to content
+  </a>
 
   <header class="sticky top-0 z-50 border-b border-black/5 bg-paper/85 backdrop-blur">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-      <a href="#" class="text-sm font-semibold uppercase tracking-[0.22em] text-blue">
+      <a href="/" class="text-sm font-semibold uppercase tracking-[0.22em] text-blue">
         Craig Callaghan
       </a>
 
@@ -61,11 +77,12 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero -->
     <section class="px-6 py-28 lg:px-8 lg:py-36">
       <div class="mx-auto max-w-6xl">
-        <p class="mb-6 text-sm font-semibold uppercase tracking-[0.28em] text-eyebrows">
+        <p data-hero="eyebrow" class="mb-6 text-sm font-semibold uppercase tracking-[0.28em] text-eyebrows"
+          style="opacity:0">
           Websites · Digital platforms · Ongoing support
         </p>
 
@@ -318,11 +335,34 @@
     </section>
   </main>
 
+  <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie notice"
+    class="fixed inset-x-0 bottom-0 z-50 hidden px-4 pb-4">
+    <div
+      class="mx-auto max-w-5xl rounded-2xl border border-blue/10 bg-white/95 p-4 shadow-[0_18px_60px_-24px_rgba(22,58,95,0.35)] backdrop-blur-md">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div class="text-sm leading-6 text-muted">
+          This website uses Google Analytics only to understand traffic patterns. It does not use any other cookies or
+          collect personal data.
+          <a href="/cookie-policy.html" class="font-semibold text-blue underline underline-offset-2">Manage cookies</a>
+        </div>
+        <button id="cookie-banner-dismiss" type="button"
+          class="inline-flex items-center justify-center rounded-full bg-blue px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2">
+          Dismiss
+        </button>
+      </div>
+    </div>
+  </div>
+
   <footer class="border-t border-black/5 px-6 py-8 lg:px-8">
     <div
       class="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-muted md:flex-row md:items-center md:justify-between">
       <p class="text-blue/60">© Craig Callaghan</p>
-      <p>Websites, digital platforms and ongoing support.</p>
+      <div class="flex items-center gap-4">
+        <p>Websites, digital platforms and ongoing support.</p>
+        <a href="/cookie-policy.html" class="hover:text-blue">Cookie policy</a>
+        <a href="/privacy-policy.html" class="hover:text-blue">Privacy policy</a>
+        <a href="/terms.html" class="hover:text-blue">Terms</a>
+      </div>
     </div>
   </footer>
 

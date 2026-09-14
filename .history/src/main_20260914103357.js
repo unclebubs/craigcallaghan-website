@@ -7,8 +7,51 @@ const ease = [0.22, 1, 0.36, 1]
 const fadeUp = { opacity: [0, 1], y: [16, 0] }
 const fadeUpSubtle = { opacity: [0, 1], y: [8, 0] }
 const fadeIn = { opacity: [0, 1] }
+const wipeInLeft = { opacity: [0, 1], x: [-32, 0], clipPath: ["inset(0 100% 0 0)", "inset(0 0% -10px 0)"] }
 
 // --- Reduced motion handling ---
+
+const cookieBanner = document.getElementById("cookie-banner")
+const cookieBannerDismiss = document.getElementById("cookie-banner-dismiss")
+const cookieBannerKey = "craig-cookie-banner-dismissed"
+
+if (cookieBanner && cookieBannerDismiss) {
+  try {
+    const dismissed = window.localStorage.getItem(cookieBannerKey) === "true"
+    if (!dismissed) {
+      cookieBanner.classList.remove("hidden")
+      cookieBanner.animate(
+        [
+          { opacity: 0, transform: "translateY(18px)" },
+          { opacity: 1, transform: "translateY(0)" },
+        ],
+        {
+          duration: 350,
+          easing: "ease-out",
+        }
+      )
+    }
+
+    cookieBannerDismiss.addEventListener("click", () => {
+      window.localStorage.setItem(cookieBannerKey, "true")
+      cookieBanner.animate(
+        [
+          { opacity: 1, transform: "translateY(0)" },
+          { opacity: 0, transform: "translateY(18px)" },
+        ],
+        {
+          duration: 250,
+          easing: "ease-in",
+          fill: "forwards",
+        }
+      )
+
+      window.setTimeout(() => cookieBanner.classList.add("hidden"), 220)
+    })
+  } catch (error) {
+    cookieBanner.classList.remove("hidden")
+  }
+}
 
 const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
@@ -22,10 +65,10 @@ if (prefersReducedMotion) {
   // --- Hero entrance (fires on page load) ---
 
   const heroSequence = [
-    { name: "heading-1", keyframes: fadeUp, duration: 0.6, delay: 0.25 },
-    { name: "heading-2", keyframes: fadeUp, duration: 0.6, delay: 0.45 },
-    { name: "strapline", keyframes: fadeUpSubtle, duration: 0.7, delay: 0.75 },
-    { name: "ctas", keyframes: fadeIn, duration: 0.5, delay: 0.95 },
+    { name: "heading-1", keyframes: wipeInLeft, duration: 0.7, delay: 0.25 },
+    { name: "heading-2", keyframes: wipeInLeft, duration: 0.7, delay: 0.65 },
+    { name: "strapline", keyframes: fadeUpSubtle, duration: 0.7, delay: 1.25 },
+    { name: "ctas", keyframes: fadeIn, duration: 0.5, delay: 1.25 },
   ]
 
   heroSequence.forEach(({ name, keyframes, duration, delay }) => {

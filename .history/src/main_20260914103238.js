@@ -11,6 +11,24 @@ const wipeInLeft = { opacity: [0, 1], x: [-32, 0], clipPath: ["inset(0 100% 0 0)
 
 // --- Reduced motion handling ---
 
+const cookieBanner = document.getElementById("cookie-banner")
+const cookieBannerDismiss = document.getElementById("cookie-banner-dismiss")
+const cookieBannerKey = "craig-cookie-banner-dismissed"
+
+if (cookieBanner && cookieBannerDismiss) {
+  try {
+    const dismissed = window.localStorage.getItem(cookieBannerKey) === "true"
+    if (!dismissed) cookieBanner.classList.remove("hidden")
+
+    cookieBannerDismiss.addEventListener("click", () => {
+      window.localStorage.setItem(cookieBannerKey, "true")
+      cookieBanner.classList.add("hidden")
+    })
+  } catch (error) {
+    cookieBanner.classList.remove("hidden")
+  }
+}
+
 const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
 ).matches

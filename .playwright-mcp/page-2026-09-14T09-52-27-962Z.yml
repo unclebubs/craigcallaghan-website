@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Craig Callaghan" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation "Main navigation" [ref=e6]:
+        - link "Work" [ref=e7] [cursor=pointer]:
+          - /url: "#work"
+        - link "Services" [ref=e8] [cursor=pointer]:
+          - /url: "#services"
+        - link "Approach" [ref=e9] [cursor=pointer]:
+          - /url: "#approach"
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Websites · Digital platforms · Ongoing support
+      - heading "Your goals first. Technology second." [level=1] [ref=e15]:
+        - generic [ref=e16]: Your goals first.
+        - generic [ref=e17]: Technology second.
+      - paragraph [ref=e18]: Every project starts by understanding your business and the challenges you're trying to solve. The best technology decisions start with your goals.
+      - generic [ref=e19]:
+        - link "View my work" [ref=e20] [cursor=pointer]:
+          - /url: "#work"
+        - link "Get in touch" [ref=e21] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: The challenge
+        - heading "Digital projects often get messy because the problem was never made clear." [level=2] [ref=e26]
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: I work with organisations that have grown around content, data or specialist knowledge. Over time, systems become harder to manage and complexity gets in the way.
+        - paragraph [ref=e29]: The first step is rarely writing code. It's understanding the real problem, simplifying it and designing something that people can actually use.
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: What I do
+        - heading "Practical digital support for organisations that value clarity." [level=2] [ref=e34]
+      - generic [ref=e35]:
+        - article [ref=e36]:
+          - heading "Websites" [level=3] [ref=e37]
+          - paragraph [ref=e38]: Accessible, content-rich websites that are easy to navigate, manage and evolve.
+        - article [ref=e39]:
+          - heading "Digital platforms" [level=3] [ref=e40]
+          - paragraph [ref=e41]: Custom tools, structured content systems, dashboards and data-driven platforms.
+        - article [ref=e42]:
+          - heading "Ongoing support" [level=3] [ref=e43]
+          - paragraph [ref=e44]: Long-term improvements, hosting, maintenance, performance work and calm technical advice.
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - paragraph [ref=e48]: What I can do
+        - heading "A closer look at how I can help." [level=2] [ref=e49]
+      - generic [ref=e50]:
+        - article [ref=e51]:
+          - heading "Web applications & platforms" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Bespoke web applications, portals and data-driven platforms built around a specific problem or way of working, not squeezed into an off-the-shelf product.
+        - article [ref=e54]:
+          - heading "CMS & content platforms" [level=3] [ref=e55]
+          - paragraph [ref=e56]: Websites and content platforms that are straightforward to manage and built to last. From WordPress to enterprise CMS platforms such as Magnolia and Drupal, including extending and improving existing systems.
+        - article [ref=e57]:
+          - heading "Existing systems & problem solving" [level=3] [ref=e58]
+          - paragraph [ref=e59]: Not every project needs a rebuild. I work with existing websites and applications to add features, solve difficult problems, improve performance and make ageing systems easier to live with.
+        - article [ref=e60]:
+          - heading "Agency & white-label development" [level=3] [ref=e61]
+          - paragraph [ref=e62]: Senior development support for agencies that need extra capacity or specialist experience, from taking ownership of a piece of work to quietly working as part of an existing team.
+        - article [ref=e63]:
+          - heading "Charity & purpose-led projects" [level=3] [ref=e64]
+          - paragraph [ref=e65]: Practical digital solutions for charities and purpose-led organisations, with careful attention to budgets, maintainability and making sure the money is spent where it actually makes a difference.
+        - article [ref=e66]:
+          - heading "Technical discovery & prototyping" [level=3] [ref=e67]
+          - paragraph [ref=e68]: Turning an idea or complicated requirement into something tangible. I use discovery and working prototypes to test assumptions, uncover complexity and define what should actually be built before committing to the full project.
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: My approach
+        - heading "Calm, thoughtful work focused on what matters." [level=2] [ref=e73]
+      - generic [ref=e74]:
+        - article [ref=e75]:
+          - heading "Start with the problem" [level=3] [ref=e76]
+          - paragraph [ref=e77]: The right technical choice only makes sense once the real challenge is understood.
+        - article [ref=e78]:
+          - heading "Design for clarity" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Whether it is a website, dashboard or database, my aim is to make information easier to use.
+        - article [ref=e81]:
+          - heading "Build to last" [level=3] [ref=e82]
+          - paragraph [ref=e83]: I favour maintainable systems that can evolve, not disposable builds that only look good on launch day.
+        - article [ref=e84]:
+          - heading "Partner, not disappear" [level=3] [ref=e85]
+          - paragraph [ref=e86]: I stay involved where I'm needed, providing ongoing support, advice and improvements after launch.
+    - generic [ref=e88]:
+      - paragraph [ref=e89]: About
+      - heading "A digital partner for organisations with complex things to explain." [level=2] [ref=e90]
+      - paragraph [ref=e91]: I'm Craig, an independent developer based in East Lothian. I work with charities, academic and healthcare organisations, and businesses that need thoughtful websites, useful digital tools and reliable long-term support.
+      - paragraph [ref=e92]: My best work usually sits where content, data, design and technology overlap, making complex information clearer, easier to manage and easier to use.
+    - generic [ref=e94]:
+      - paragraph [ref=e95]: Get in touch
+      - heading "Have something complex that needs made clearer?" [level=2] [ref=e96]
+      - paragraph [ref=e97]: Whether you are planning a new website, improving an existing platform or trying to make complex information easier to understand, I’d be happy to hear about it.
+      - link "Start a conversation →" [ref=e98] [cursor=pointer]:
+        - /url: mailto:craig.callaghan@gmail.com
+  - dialog "Cookie notice" [ref=e99]:
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - text: This website uses Google Analytics only to understand traffic patterns. It does not use any other cookies or collect personal data.
+        - link "Manage cookies" [ref=e103] [cursor=pointer]:
+          - /url: /cookie-policy.html
+      - button "Dismiss" [ref=e104] [cursor=pointer]
+  - contentinfo [ref=e105]:
+    - generic [ref=e106]:
+      - paragraph [ref=e107]: © Craig Callaghan
+      - generic [ref=e108]:
+        - paragraph [ref=e109]: Websites, digital platforms and ongoing support.
+        - link "Cookie policy" [ref=e110] [cursor=pointer]:
+          - /url: /cookie-policy.html
+        - link "Privacy policy" [ref=e111] [cursor=pointer]:
+          - /url: /privacy-policy.html
+        - link "Terms" [ref=e112] [cursor=pointer]:
+          - /url: /terms.html
